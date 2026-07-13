@@ -187,6 +187,3 @@ Feedstock Maintainers
 
 * [@valeriupredoi](https://github.com/valeriupredoi/)
 
-
-<!-- dummy commit to enable rerendering -->
-
