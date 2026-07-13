@@ -14,7 +14,7 @@ source:
   sha256: 46d40b4bb83c644e4ca013b42632cf8afde96c9c4e32b17355fd9acfc2383d9a
 
 build:
-  number: 0
+  number: 1
   skip:
     - win
     - match(python, "<3.11")
@@ -34,7 +34,7 @@ requirements:
     - python
     - numpy >=1.24
     - cftime
-    - pyfive >=1.1.2 
+    - pyfive >=1.1.2
 
 tests:
   - python:
