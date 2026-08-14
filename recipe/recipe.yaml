@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: "3.11"
   name: umfive
-  version: "0.2.2"
+  version: "0.3.0"
 
 package:
   name: ${{ name }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 46d40b4bb83c644e4ca013b42632cf8afde96c9c4e32b17355fd9acfc2383d9a
+  sha256: 34cf8cbc95e1a8c022d73c543c014c9339b06bba4cfe1d9d455296c382c40b32
 
 build:
-  number: 1
+  number: 0
   skip:
     - win
     - match(python, "<3.11")
