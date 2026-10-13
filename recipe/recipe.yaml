@@ -54,7 +54,7 @@ tests:
         - xnetcdf
     script:
       - pytest -n 2
-      - umdump --help
+      - umdump
 
 about:
   homepage: https://pypi.org/project/umfive/
