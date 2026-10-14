@@ -8,16 +8,17 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315:
-        CONFIG: osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
+      # TODO Reinstate this when netCDF4 ==1.7.5 comes online with 3.15 support
+      # osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315:
+      #   CONFIG: osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315
+      #   UPLOAD_PACKAGES: 'True'
+      #   VMIMAGE: macOS-15
+      #   build_workspace_dir: ~/miniforge3/conda-bld
+      #   free_disk_space: skip
+      #   pagefile_size: 0
+      #   resize_partitions: false
+      #   store_build_artifacts: false
+      #   tools_install_dir: ~/miniforge3
       osx_64_channel_sourcesconda-forgepython3.11.____cpython:
         CONFIG: osx_64_channel_sourcesconda-forgepython3.11.____cpython
         UPLOAD_PACKAGES: 'True'
