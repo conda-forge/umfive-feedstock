@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: umfive
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: ${{ name }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: b246209cf306ddff20e0b98ac423e08f88125a91f83fd2ca280df5c4c5eb4f79
+  sha256: 95a27e941cf40a25e1d1ea2693060b8eb1a919b853b192cd568b4e0932c2b2fe
 
 build:
-  number: 1
+  number: 0
   skip:
     - win
     - match(python, "<3.11")
@@ -33,7 +33,7 @@ requirements:
     - python
     - numpy >=2
     - cftime
-    - pyfive >=1.1.2
+    - pyfive >=1.3.1
 
 tests:
   - python:
@@ -48,7 +48,7 @@ tests:
       run:
         - fsspec
         - pip
-        - pytest >6.0.0
+        - pytest >8.0.0
         - pytest-xdist
         - python
         - xnetcdf
