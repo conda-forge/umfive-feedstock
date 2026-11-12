@@ -34,6 +34,7 @@ requirements:
     - numpy >=2
     - cftime
     - pyfive >=1.3.1
+    - xnetcdf
 
 tests:
   - python:
@@ -51,7 +52,6 @@ tests:
         - pytest >8.0.0
         - pytest-xdist
         - python
-        - xnetcdf
     script:
       - pytest -n 2
       - umdump
